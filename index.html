@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#000" />
+  <meta name="description" content="You've been selected for TikTok Screentime To Cash. Confirm your eligibility, then complete a few sponsored deals to get paid to scroll." />
+  <title>TikTok — Get Paid to Scroll</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23fff' d='M12.5.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z'/%3E%3C/svg%3E" />
+  <style>
+    :root { --pink: #fe2c55; --cyan: #25f4ee; --bg: #000; --muted: #a8a8ad; --line: #242428; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    [hidden] { display: none !important; }
+    html { background: var(--bg); }
+    body { min-height: 100vh; overflow-x: hidden; color: #fff; background: var(--bg); font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+    .page { width: min(100%, 720px); margin: 0 auto; padding: 24px 22px 168px; }
+    .topbar { display: flex; align-items: center; justify-content: space-between; margin-bottom: 44px; }
+    .brand { display: flex; align-items: center; gap: 10px; }
+    .brand svg { width: 28px; height: 28px; display: block; }
+    .brand span { font-size: 22px; font-weight: 800; letter-spacing: -.04em; }
+    .menu { display: grid; gap: 6px; width: 34px; }
+    .menu span { height: 3px; border-radius: 4px; background: #fff; }
+    .hero { text-align: center; }
+    .hero h1 { max-width: 600px; margin: 0 auto; font-size: clamp(36px, 5vw, 58px); line-height: .98; letter-spacing: -.065em; font-weight: 850; }
+    .hero h1 em { display: block; color: var(--pink); font-style: normal; }
+    .hero p { max-width: 560px; margin: 18px auto 0; color: #f5f5f7; font-size: clamp(17px, 2.2vw, 22px); line-height: 1.35; letter-spacing: -.025em; }
+    .scroll-estimate { display: inline-flex; flex-direction: column; gap: 4px; margin-top: 18px; padding: 12px 18px; border: 1px solid #303035; border-radius: 16px; background: #141416; }
+    .scroll-estimate span { color: var(--pink); font-size: 11px; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; }
+    .scroll-estimate strong { font-size: 20px; letter-spacing: -.03em; }
+    .visual { width: min(100%, 340px); margin: 34px auto 0; }
+    .note { display: flex; align-items: center; gap: 10px; margin-bottom: 14px; padding: 12px 14px; border-radius: 16px; background: #fff; color: #161616; box-shadow: 0 10px 30px rgba(0,0,0,.35); }
+    .note-mark { flex: 0 0 32px; width: 32px; height: 32px; display: grid; place-items: center; border-radius: 8px; background: #111; }
+    .note-mark svg { width: 18px; height: 18px; }
+    .note strong { display: block; font-size: 13px; line-height: 1.15; }
+    .note p { margin-top: 2px; color: #3a3a3a; font-size: 12px; line-height: 1.3; }
+    .note time { margin-left: auto; color: #8d8d8d; font-size: 11px; align-self: flex-start; }
+    .phone { border-radius: 28px; background: #fff; color: #111; overflow: hidden; box-shadow: 0 18px 50px rgba(0,0,0,.45); }
+    .screen { padding: 22px 18px 18px; text-align: center; }
+    .hands { width: 168px; height: auto; margin: 4px auto 8px; display: block; }
+    .screen-copy { font-size: 15px; line-height: 1.35; letter-spacing: -.02em; font-weight: 750; }
+    .screen-copy em { color: var(--pink); font-style: normal; }
+    .setup { margin-top: 14px; padding: 12px 14px; border-radius: 14px; background: #f3f3f4; text-align: left; }
+    .setup strong { display: block; margin-bottom: 8px; font-size: 13px; }
+    .setup ol { margin: 0; padding-left: 18px; color: #3a3a3a; font-size: 13px; line-height: 1.55; }
+    .screen-btn { margin-top: 14px; padding: 12px 16px; border-radius: 12px; background: var(--pink); color: #fff; font-size: 15px; font-weight: 750; }
+    .cta { position: fixed; z-index: 10; right: 18px; bottom: 16px; left: 18px; display: flex; align-items: center; justify-content: center; gap: 18px; width: min(100% - 36px, 520px); margin: 0 auto; padding: 24px 22px; border: 0; border-radius: 24px; color: #fff; background: var(--pink); font-size: clamp(20px, 2.5vw, 26px); font-weight: 750; letter-spacing: -.04em; line-height: 1.2; text-decoration: none; box-shadow: 0 8px 24px rgba(0,0,0,.35); cursor: pointer; transition: filter .15s ease, transform .15s ease; }
+    .cta[hidden] { display: none !important; }
+    .cta:hover { filter: brightness(1.1); transform: translateY(-2px); }
+    .cta span { font-size: 1.15em; font-weight: 400; }
+    .details { width: min(100%, 520px); margin: 36px auto 0; padding-top: 22px; border-top: 1px solid var(--line); }
+    .details h2 { margin-bottom: 14px; color: var(--pink); font-size: 13px; letter-spacing: .17em; text-transform: uppercase; }
+    .detail { display: grid; grid-template-columns: 48px minmax(0, 1fr) 38px; align-items: center; gap: 14px; padding: 15px 0; border-bottom: 1px solid var(--line); }
+    .detail:last-child { border-bottom: 0; }
+    .detail-icon { width: 48px; height: 48px; display: grid; place-items: center; border-radius: 13px; background: #202024; }
+    .detail-icon img { width: 38px; height: 38px; border-radius: 10px; object-fit: cover; }
+    .detail-icon svg { width: 25px; height: 25px; stroke: #fff; }
+    .detail-number { display: grid; place-items: center; width: 38px; height: 38px; border-radius: 50%; color: #000; background: var(--pink); font-size: 17px; font-weight: 800; }
+    .detail h3 { font-size: 16px; line-height: 1.15; }
+    .detail p { margin-top: 4px; color: var(--muted); font-size: 13px; line-height: 1.35; }
+    .quiz-area { width: min(100%, 520px); margin: 36px auto 0; }
+    .quiz-screen, .final-screen { padding-top: 22px; border-top: 1px solid var(--line); }
+    .quiz-meta { display: flex; justify-content: space-between; margin-bottom: 12px; color: var(--pink); font-size: 12px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
+    .quiz-track { height: 4px; margin-bottom: 26px; border-radius: 999px; background: #242428; overflow: hidden; }
+    .quiz-fill { width: 33.333%; height: 100%; border-radius: inherit; background: var(--pink); transition: width .25s ease; }
+    .quiz-title { font-size: clamp(24px, 3vw, 32px); line-height: 1.05; letter-spacing: -.045em; }
+    .quiz-sub { margin-top: 8px; color: var(--muted); font-size: 15px; line-height: 1.35; }
+    .quiz-options { display: grid; gap: 10px; margin-top: 20px; }
+    .quiz-option { display: flex; align-items: center; justify-content: space-between; width: 100%; padding: 16px 17px; border: 1px solid #303035; border-radius: 12px; color: #fff; background: #141416; font-size: 15px; text-align: left; cursor: pointer; }
+    .quiz-option:hover { border-color: var(--pink); }
+    .quiz-option .opt-arrow { color: var(--pink); font-size: 20px; }
+    .opt-main { display: flex; align-items: center; gap: 12px; }
+    .opt-icon { width: 32px; height: 32px; flex: 0 0 32px; display: grid; place-items: center; overflow: hidden; border-radius: 8px; background: transparent; }
+    .opt-icon img { width: 32px; height: 32px; display: block; object-fit: cover; transform: scale(1.06); }
+    .opt-icon.apple { background: #fff; }
+    .opt-icon.apple img { width: 18px; height: 22px; object-fit: contain; transform: none; }
+    .payout-card { display: flex; align-items: center; gap: 16px; margin-bottom: 18px; padding: 20px; border: 1px solid #303035; border-radius: 22px; background: #141416; }
+    .payout-marks { display: flex; align-items: center; gap: 10px; flex: 0 0 auto; }
+    .payout-x { color: var(--pink); font-size: 22px; font-weight: 800; line-height: 1; }
+    .payout-mark { width: 66px; height: 66px; flex: 0 0 66px; display: grid; place-items: center; overflow: hidden; border-radius: 16px; background: transparent; }
+    .payout-mark img { width: 66px; height: 66px; display: block; object-fit: cover; transform: scale(1.06); }
+    .payout-mark.apple { background: #fff; }
+    .payout-mark.apple img { width: 36px; height: 44px; object-fit: contain; transform: none; }
+    .payout-copy { min-width: 0; flex: 1; }
+    .payout-kicker { color: var(--pink); font-size: 12px; font-weight: 800; letter-spacing: .14em; }
+    .payout-title { margin-top: 4px; font-size: 24px; font-weight: 800; letter-spacing: -.03em; }
+    .payout-max { margin-left: auto; text-align: right; flex: 0 0 auto; }
+    .payout-max strong { display: block; font-size: 26px; letter-spacing: -.04em; line-height: 1; }
+    .payout-max span { display: block; margin-top: 4px; color: var(--pink); font-size: 10px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
+    .final-screen .details { width: 100%; margin: 0; padding-top: 0; border-top: 0; }
+    .final-lead { margin: -4px 0 18px; color: var(--muted); font-size: 15px; line-height: 1.4; }
+    .proof { display: grid; grid-template-columns: 1fr 1fr 1fr; margin-bottom: 22px; padding: 16px 6px; border: 1px solid #e6e6e8; border-radius: 14px; background: #fff; color: #111; text-align: center; }
+    .proof div + div { border-left: 1px solid #e6e6e8; }
+    .proof strong { display: block; font-size: 22px; letter-spacing: -.04em; line-height: 1; }
+    .proof span { display: block; margin-top: 6px; color: #8e8e93; font-size: 10px; font-weight: 700; letter-spacing: .11em; text-transform: uppercase; }
+    .reserve-bar { display: flex; align-items: center; gap: 10px; margin-top: 16px; padding-top: 14px; border-top: 1px solid var(--line); }
+    .reserve-label { font-size: 13px; font-weight: 700; white-space: nowrap; }
+    .reserve-label span { color: var(--muted); font-weight: 500; }
+    .reserve-time { color: var(--pink); font-size: 14px; font-weight: 800; font-variant-numeric: tabular-nums; min-width: 3em; }
+    .reserve-track { flex: 1; height: 5px; border-radius: 999px; background: #242428; overflow: hidden; }
+    .reserve-fill { display: block; width: 100%; height: 100%; border-radius: inherit; background: var(--pink); transition: width 1s linear; }
+    .faq { margin-top: 28px; }
+    .faq h2 { margin-bottom: 12px; color: var(--pink); font-size: 13px; letter-spacing: .17em; text-transform: uppercase; }
+    .faq-item { border-bottom: 1px solid var(--line); }
+    .faq-q { display: flex; align-items: center; justify-content: space-between; gap: 12px; width: 100%; padding: 16px 0; border: 0; color: #fff; background: transparent; font-size: 16px; font-weight: 750; text-align: left; cursor: pointer; }
+    .faq-q span { color: var(--pink); font-size: 22px; line-height: 1; transition: transform .2s ease; }
+    .faq-item.open .faq-q span { transform: rotate(90deg); }
+    .faq-a { max-height: 0; overflow: hidden; color: var(--muted); font-size: 14px; line-height: 1.45; transition: max-height .25s ease, padding .25s ease; }
+    .faq-item.open .faq-a { max-height: 140px; padding-bottom: 16px; }
+    @media (max-width: 600px) {
+      .page { padding: 18px 14px 168px; }
+      .topbar { margin-bottom: 42px; }
+      .brand svg { width: 24px; height: 24px; }
+      .brand span { font-size: 20px; }
+      .menu { width: 28px; gap: 5px; }
+      .menu span { height: 2px; }
+      .hero h1 { font-size: 40px; }
+      .hero p { margin-top: 16px; font-size: 16px; line-height: 1.3; }
+      .visual { margin-top: 30px; }
+      .cta { padding: 22px 18px; font-size: 20px; border-radius: 20px; }
+      .details { margin-top: 34px; padding-top: 20px; }
+      .detail { grid-template-columns: 44px minmax(0, 1fr) 34px; padding: 11px 0; gap: 10px; }
+      .detail-icon { width: 44px; height: 44px; border-radius: 12px; }
+      .detail-icon img { width: 35px; height: 35px; border-radius: 9px; }
+      .detail-number { width: 34px; height: 34px; font-size: 15px; }
+      .detail h3 { font-size: 17px; }
+      .detail p { font-size: 14px; }
+      .quiz-area { margin-top: 30px; }
+      .quiz-screen, .final-screen { padding-top: 18px; }
+      .quiz-title { font-size: 23px; }
+      .quiz-sub { font-size: 14px; }
+      .quiz-option { padding: 14px; font-size: 14px; }
+      .proof { padding: 14px 4px; }
+      .proof strong { font-size: 18px; }
+      .proof span { font-size: 9px; letter-spacing: .08em; }
+      .payout-card { gap: 12px; padding: 16px; }
+      .payout-mark { width: 52px; height: 52px; flex-basis: 52px; border-radius: 14px; }
+      .payout-mark img { width: 52px; height: 52px; }
+      .payout-mark.apple img { width: 28px; height: 34px; }
+      .payout-title { font-size: 18px; }
+      .payout-max strong { font-size: 22px; }
+      .faq-q { font-size: 15px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header class="topbar" id="topbar">
+      <div class="brand">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path fill="#25f4ee" d="M12.4.1c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/>
+          <path fill="#fe2c55" d="M12.7.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/>
+          <path fill="#fff" d="M12.5.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/>
+        </svg>
+        <span>TikTok</span>
+      </div>
+      <div class="menu" aria-hidden="true"><span></span><span></span><span></span></div>
+    </header>
+
+    <section class="hero" aria-labelledby="hero-title">
+      <h1 id="hero-title"><em>Get paid to scroll</em>Screentime To Cash</h1>
+      <p id="hero-lead">You've been selected. Confirm your eligibility and turn the time you already spend scrolling into cash.</p>
+      <div class="scroll-estimate" id="scroll-estimate" hidden><span>Estimated scroll time</span><strong id="scroll-time">over 2 hours a day</strong></div>
+    </section>
+
+    <section class="quiz-area" aria-live="polite">
+      <div class="quiz-screen" id="quiz-screen">
+        <div class="quiz-meta"><span id="quiz-count">Question 1 of 3</span><span id="quiz-percent">33%</span></div>
+        <div class="quiz-track"><div class="quiz-fill" id="quiz-fill"></div></div>
+        <h2 class="quiz-title" id="quiz-title">How often do you scroll TikTok?</h2>
+        <p class="quiz-sub" id="quiz-sub">This confirms your Screentime To Cash eligibility.</p>
+        <div class="quiz-options" id="quiz-options"></div>
+      </div>
+      <div class="final-screen" id="final-screen" hidden>
+        <div class="payout-card">
+          <div class="payout-marks">
+            <div class="payout-mark"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/72/12/cd/7212cd13-b924-a635-b0af-2aaeeb3311d5/Placeholder.mill/400x400bb-75.webp" alt="TikTok"></div>
+            <span class="payout-x" aria-hidden="true">×</span>
+            <div class="payout-mark" id="payout-mark"></div>
+          </div>
+          <div class="payout-copy">
+            <div class="payout-kicker">Payout</div>
+            <div class="payout-title" id="payout-title">Payout</div>
+          </div>
+          <div class="payout-max"><strong>$1,000</strong><span>Max</span></div>
+        </div>
+        <div class="proof" aria-label="Program stats">
+          <div><strong>31K+</strong><span>Active users</span></div>
+          <div><strong>$6.2M</strong><span>Rewards paid</span></div>
+          <div><strong>&lt;5 min</strong><span>First reward</span></div>
+        </div>
+        <section class="details" aria-labelledby="details-title">
+          <h2 id="details-title">Final Steps</h2>
+          <p class="final-lead" id="final-lead">Enter your info, complete a few sponsored deals, then enjoy your reward.</p>
+          <div class="detail"><div class="detail-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 7 9-7"/></svg></div><div><h3>Enter your email and basic info</h3><p>Tell us where to send the reward. It only takes about a minute.</p></div><div class="detail-number">1</div></div>
+          <div class="detail"><div class="detail-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 6h13M8 12h13M8 18h13"/><path d="M3.5 6h.01M3.5 12h.01M3.5 18h.01"/></svg></div><div><h3>Complete 3–5 sponsored deals</h3><p>Finish a few partner offers. This is what unlocks your reward.</p></div><div class="detail-number">2</div></div>
+          <div class="detail"><div class="detail-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="5" width="19" height="14" rx="2"/><path d="M2.5 9h19M6 14h5"/></svg></div><div><h3>Enjoy your reward</h3><p id="payout-line">Collect your payout via email or phone number once the deals are done.</p></div><div class="detail-number">3</div></div>
+          <div class="reserve-bar" aria-label="Spot reserved for 10 minutes">
+            <div class="reserve-label"><strong>Reserved</strong> <span>for:</span></div>
+            <div class="reserve-time" id="reserve-time">10:00</div>
+            <div class="reserve-track" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"><span class="reserve-fill" id="reserve-fill"></span></div>
+          </div>
+        </section>
+        <section class="faq" aria-labelledby="faq-title">
+          <h2 id="faq-title">FAQ</h2>
+          <div class="faq-item">
+            <button class="faq-q" type="button">What are deals? <span aria-hidden="true">›</span></button>
+            <p class="faq-a">Deals are short sponsored offers from partners, like an app install or a signup. Finish 3–5 of them to unlock your reward.</p>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" type="button">How long do deals take? <span aria-hidden="true">›</span></button>
+            <p class="faq-a">Most deals take a few minutes. You can usually finish the set in one sitting.</p>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" type="button">When will I receive my reward? <span aria-hidden="true">›</span></button>
+            <p class="faq-a">Your payout is sent after the deals are completed and verified, usually within 24–48 hours.</p>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <div class="visual" id="visual">
+      <div class="note">
+        <div class="note-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path fill="#25f4ee" d="M12.4.1c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/><path fill="#fe2c55" d="M12.7.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/><path fill="#fff" d="M12.5.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
+        </div>
+        <div>
+          <strong>TikTok</strong>
+          <p>You have been accepted, tap here to get started!</p>
+        </div>
+        <time>now</time>
+      </div>
+      <div class="phone" aria-hidden="true">
+        <div class="screen">
+          <svg class="hands" viewBox="0 0 220 108">
+            <circle cx="24" cy="22" r="4" fill="#fe2c55"/>
+            <circle cx="46" cy="10" r="3" fill="#25f4ee"/>
+            <circle cx="196" cy="16" r="4" fill="#fe2c55"/>
+            <circle cx="172" cy="8" r="3" fill="#25f4ee"/>
+            <rect x="14" y="46" width="7" height="7" rx="1.5" fill="#25f4ee" transform="rotate(18 14 46)"/>
+            <rect x="198" y="42" width="6" height="6" rx="1.5" fill="#fe2c55" transform="rotate(-16 198 42)"/>
+            <path d="M78 16c8-12 20-4 12 6" stroke="#fe2c55" stroke-width="3" fill="none" stroke-linecap="round"/>
+            <path d="M142 12c12-8 18 4 6 10" stroke="#25f4ee" stroke-width="3" fill="none" stroke-linecap="round"/>
+            <g fill="#fe2c55" transform="translate(46,30) rotate(-10)">
+              <rect x="6" y="2" width="11" height="32" rx="5.5"/>
+              <rect x="19" y="0" width="11" height="34" rx="5.5"/>
+              <rect x="32" y="4" width="11" height="30" rx="5.5"/>
+              <rect x="45" y="10" width="11" height="26" rx="5.5"/>
+              <rect x="2" y="30" width="56" height="36" rx="16"/>
+              <rect x="-8" y="40" width="16" height="20" rx="8" transform="rotate(-28 -2 48)"/>
+            </g>
+            <g fill="#25f4ee" transform="translate(112,30) rotate(10)">
+              <rect x="2" y="10" width="11" height="26" rx="5.5"/>
+              <rect x="15" y="4" width="11" height="30" rx="5.5"/>
+              <rect x="28" y="0" width="11" height="34" rx="5.5"/>
+              <rect x="41" y="2" width="11" height="32" rx="5.5"/>
+              <rect x="0" y="30" width="56" height="36" rx="16"/>
+              <rect x="48" y="40" width="16" height="20" rx="8" transform="rotate(28 56 48)"/>
+            </g>
+          </svg>
+          <p class="screen-copy">Congratulations! You have been selected for our <em>Screentime To Cash</em> program.</p>
+          <div class="setup">
+            <strong>Complete setup to start earning</strong>
+            <ol>
+              <li>Confirm your eligibility</li>
+              <li>Complete a few sponsored deals</li>
+              <li>Claim your cash reward</li>
+            </ol>
+          </div>
+          <div class="screen-btn">Start Now</div>
+        </div>
+      </div>
+    </div>
+
+    <a class="cta" id="cta" hidden href="http://t.garageredeem.com/click/1">I'm Ready <span aria-hidden="true">›</span></a>
+
+  </main>
+  <script>
+    const questions = [
+      { title: 'How often do you scroll TikTok?', sub: 'This confirms your Screentime To Cash eligibility.', options: ['Every day', 'A few times a week', 'Occasionally', 'I’m new to TikTok'] },
+      { title: 'Where does your screen time go?', sub: 'Pick the one that sounds most like you.', options: ['For You page', 'Lives', 'TikTok Shop', 'A bit of everything'] },
+      { title: 'How would you like to be paid out?', sub: 'Choose where you want your reward sent.', options: [
+        { label: 'Cash App', url: 'http://t.garageredeem.com/click/1', icon: '<img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/95/80/3f/95803f70-b967-6f09-8ff6-305257446055/Placeholder.mill/400x400bb-75.webp" alt="Cash App">' },
+        { label: 'Venmo', url: 'http://t.garageredeem.com/click/2', icon: '<img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/df/49/b3/df49b3c0-d6d5-25cd-e12c-9c9162491ad7/Placeholder.mill/400x400bb-75.webp" alt="Venmo">' },
+        { label: 'Apple Pay', url: 'http://t.garageredeem.com/click/3', icon: '<img src="applelogo.png" alt="Apple Pay">', apple: true }
+      ] }
+    ];
+    let questionIndex = 0;
+    let offerUrl = 'http://t.garageredeem.com/click/1';
+    let scrollTime = 'over 2 hours a day';
+    const scrollTimes = {
+      'Every day': 'over 2 hours a day',
+      'A few times a week': 'over 5 hours a week',
+      'Occasionally': 'over 1 hour a week',
+      'I’m new to TikTok': 'over 30 minutes a week'
+    };
+    const quizScreen = document.getElementById('quiz-screen');
+    const finalScreen = document.getElementById('final-screen');
+    const cta = document.getElementById('cta');
+    const visual = document.getElementById('visual');
+    function renderQuestion() {
+      const q = questions[questionIndex];
+      document.getElementById('quiz-count').textContent = 'Question ' + (questionIndex + 1) + ' of 3';
+      document.getElementById('quiz-percent').textContent = Math.round(((questionIndex + 1) / 3) * 100) + '%';
+      document.getElementById('quiz-fill').style.width = (((questionIndex + 1) / 3) * 100) + '%';
+      document.getElementById('quiz-title').textContent = q.title;
+      document.getElementById('quiz-sub').textContent = q.sub;
+      document.getElementById('quiz-options').innerHTML = q.options.map(function (option) {
+        const label = typeof option === 'string' ? option : option.label;
+        const url = typeof option === 'string' ? '' : option.url;
+        const icon = typeof option === 'string' ? '' : '<span class="opt-icon' + (option.apple ? ' apple' : '') + '">' + option.icon + '</span>';
+        return '<button class="quiz-option" type="button" data-url="' + url + '" data-label="' + label + '"><span class="opt-main">' + icon + label + '</span><span class="opt-arrow" aria-hidden="true">›</span></button>';
+      }).join('');
+      document.querySelectorAll('.quiz-option').forEach(function (button) { button.addEventListener('click', answerQuestion); });
+    }
+    function answerQuestion(event) {
+      const url = event.currentTarget.getAttribute('data-url');
+      const label = event.currentTarget.getAttribute('data-label') || event.currentTarget.textContent.replace('›', '').trim();
+      if (url) offerUrl = url;
+      if (questionIndex === 0 && scrollTimes[label]) scrollTime = scrollTimes[label];
+      if (questionIndex < questions.length - 1) { questionIndex += 1; renderQuestion(); return; }
+      const picked = questions[questions.length - 1].options.find(function (option) { return option.label === label; });
+      const mark = document.getElementById('payout-mark');
+      mark.className = 'payout-mark' + (picked && picked.apple ? ' apple' : '');
+      mark.innerHTML = picked ? picked.icon : '';
+      document.getElementById('payout-title').textContent = label + ' payout';
+      document.getElementById('final-lead').textContent = 'Enter your info, complete a few sponsored deals, then enjoy your ' + label + ' reward.';
+      document.getElementById('payout-line').textContent = 'Collect your ' + label + ' payout via email or phone number once the deals are done.';
+      document.getElementById('hero-title').innerHTML = '<em>Congrats,</em>you qualify';
+      document.getElementById('hero-lead').textContent = 'Your spot is locked in. Finish the steps below to claim your payout.';
+      document.getElementById('scroll-time').textContent = scrollTime;
+      document.getElementById('scroll-estimate').hidden = false;
+      quizScreen.hidden = true;
+      finalScreen.hidden = false;
+      visual.hidden = true;
+      window.scrollTo(0, 0);
+      cta.hidden = false;
+      cta.href = offerUrl;
+      cta.onclick = function (clickEvent) { clickEvent.preventDefault(); window.location.href = offerUrl; };
+      let seconds = 600;
+      const reserveTime = document.getElementById('reserve-time');
+      const reserveFill = document.getElementById('reserve-fill');
+      const reserveTrack = document.querySelector('.reserve-track');
+      const timer = setInterval(function () {
+        seconds -= 1;
+        reserveTime.textContent = Math.floor(seconds / 60) + ':' + String(seconds % 60).padStart(2, '0');
+        const pct = Math.max(0, seconds / 600 * 100);
+        reserveFill.style.width = pct + '%';
+        reserveTrack.setAttribute('aria-valuenow', Math.round(pct));
+        if (seconds <= 0) clearInterval(timer);
+      }, 1000);
+    }
+    document.querySelectorAll('.faq-q').forEach(function (button) {
+      button.addEventListener('click', function () { button.parentElement.classList.toggle('open'); });
+    });
+    renderQuestion();
+  </script>
+</body>
+</html>
